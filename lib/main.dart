@@ -1,12 +1,17 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:npaly_application/Pages/splash_page.dart';
+import 'Pages/payment_selection.dart';
+import 'package:device_preview/device_preview.dart';
 
-import 'Pages/payment_success.dart';
 
+void main() => runApp(
+  DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => const MyApp(), // Wrap your app
+  ),
+);
 
-
-void main() {
-  runApp(const MyApp());
-}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -16,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       
-      home: SuccesfulPaymentPage(),///////////
+      home: SplashPage(),///////////
       
       debugShowCheckedModeBanner: false,
     );

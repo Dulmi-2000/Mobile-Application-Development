@@ -36,9 +36,9 @@ class SplashPage extends StatelessWidget{
 
 
             child: Center(
-              child: Image.asset("assets/logo1.png",
+              child: Image.asset("logo1.png",
               height: size.height/5,
-              width: size.width/4,
+              width: size.width/2.3,
               ),
               ),
             ),        
@@ -48,18 +48,6 @@ class SplashPage extends StatelessWidget{
 
 
 
-          Expanded(
-          flex: 1, 
-          child: Center(
-
-            child: Container(
-            
-              padding: const EdgeInsets.all(30),
-            //  child: Image.asset("assets/logo2.png")
-              )
-            ),
-         
-           )
           ], 
         ),
       )
