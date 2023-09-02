@@ -13,6 +13,12 @@ class PaymentFirstPage extends StatefulWidget{
 
 class _PaymentFirstPageState extends State<PaymentFirstPage> {
 
+           //text editing controller for textbox
+  //final myController = TextEditingController();
+  TextEditingController myController = TextEditingController();
+
+
+
   //first value for the dropdownlist
   String dropdownvalue="Fee Type";
 
@@ -27,36 +33,36 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
     Size size=MediaQuery.of(context).size;
 
     return Scaffold(
-
+    
       //background color of the page
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-
-
-
+    
+    
+    
       body: Center(
         child: Column(
-
+    
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-
-
+    
+    
             Expanded(
               flex: 2,
               child: Column(
-
+    
                children: [
-
-
-
+    
+    
+    
                //space in top
                 SizedBox(
                   height: size.height/15,
                 ),
-
-
-
-
+    
+    
+    
+    
                 //text- pay here
                 const Text("Pay Here",
                 style: TextStyle(
@@ -64,136 +70,73 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                   fontWeight: FontWeight.w900,
                 ),
                 ),
-
-
-
-
+    
+    
+    
+    
                //space between 2 texts
                 SizedBox(
                   height: size.height/40,    
                 ),
-
-
-
+    
+    
+    
                //text - get paid for nsbm
                const Text("Get paid for NSBM",
                style: TextStyle(
                 fontSize: 16,
                 letterSpacing: 0.5,
-
+    
                ),    
                ),
-
+    
               
-
+    
                //image
-                Image.asset("pay.png",
+                Image.asset("assets/pay.png",
                 height: size.height/2.078,
                 width: size.width/1.2,
                 ),
-
+    
               
                ],
-
+    
               ),
               ),
-
-
+    
+    
                Expanded(
                 flex: 1,
                 child: Column(
                   children: [
-
-                    //textfeild for fee type
-                    /*SizedBox(
-                      height: size.height/20,
-                      width: size.width/1.2,
-
-                      child: const TextField(
-                        decoration: InputDecoration(
-                          border: OutlineInputBorder(
-                            borderSide: BorderSide(
-                              color: Colors.black,
-                              //color: HexColor("#39B54A"),
-                            ),
-          
-                          ),
-                          labelText: "Fee Type",    
-                        ),
-
-                      ),
-                    ),*/
-          /*  SizedBox(
-              height: size.height/100,
-            ),
-
-             //dropdown list of fees
-            SizedBox(
-               height: size.height/20,
-                      width: size.width/1.2,
-                      
-
-              child: DropdownButton(
-
-                
-               
-
-                borderRadius: BorderRadius.circular(7),
-                //text 
-                style: TextStyle(color: HexColor("#39B54A"),
-                fontSize: 20,
-                ),
-
-                
-                value: dropdownvalue,
-                //icon of down arrow
-                icon: const Icon(Icons.keyboard_arrow_down,
-                ),
-
-                items: items.map((String items) {
-                  return DropdownMenuItem(
-                    value: items,
-                    child: Text(items),
-                  );
-
-                }).toList(),
-                // After selecting the desired option,it will
-                // change button value to selected value
-                onChanged: (String? newValue) { 
-                  setState(() {
-                    dropdownvalue = newValue!;
-                  });
-
-                }
-                
-                ),
-            )*/
+    
 
 
 
+    
               //space between image and dropdown list
              SizedBox(
               height: size.height/250,
               width: size.width/3,
               ),
-
-
-
-
-
-
-
-
+    
+    
+    
+        
+    
+    
              //sized box for dropdown list
             SizedBox(
+
 
               //height and with of the list
             height: size.height/12,
               width: size.width/1.2,
               
-
-
-
+    
+    
+    
+    
               //dropdown button
               child: DropdownButtonFormField2<String>(
                 
@@ -204,23 +147,24 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                                 //Set the dropdown's inner contents to horizontally fill its parent.
                   
                   decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 10),
+                  contentPadding: const EdgeInsets.symmetric(vertical: 8),
                  
                    //border 
                     border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(7),
-
+                    borderRadius: BorderRadius.circular(5),
+    
                     borderSide: BorderSide(
                     color: HexColor('#39B54A'),
-
+    
                     ),
                    
                   ),
-                  // Add more decoration..
+                  // Add more decorations..
                 ),
-
-
-
+    
+    
+    
+    
                   //text to display in the top of the list - fee type text
                 hint: Text(
                   'Fee Type',
@@ -228,18 +172,18 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                   fontWeight: FontWeight.w500,
                   color: HexColor('#39B54A'),
                   
-
+    
                   ),
                 ),
                 
-
+    
                     //item list
                 items: items
                     .map((item) => DropdownMenuItem<String>(
                           value: item,
                           child: Text(
                             item,
-
+    
                             style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
@@ -247,6 +191,7 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                            
                             ),
                           ),
+                          
                         ))
                     .toList(),
                
@@ -256,9 +201,9 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                   onSaved: (value) {
                   value = value.toString();
                 },
-
-
-
+    
+    
+    
                   buttonStyleData:  const ButtonStyleData(
                   padding: EdgeInsets.only(right: 10,left: 1),
                   //height: 20,
@@ -276,48 +221,99 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                   iconSize: 30,
                   
                 ),
-
-                /*
-                 IconButton(
-      // Use the EvaIcons class for the IconData
-      icon: Icon(EvaIcons.arrowIosDownward), onPressed: () {  },
-                    ),
-                */
-
-
-
+    
+    
+    
             
             
-            //style of dropdown list
+              //style of dropdown list
                 dropdownStyleData: DropdownStyleData(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(6),
                     
                   ),
                 ),
-
-
+    
+    
                 //dropdown list items
                 menuItemStyleData:  const MenuItemStyleData(
+             
                 
-                
-             padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: EdgeInsets.symmetric(horizontal: 16),
              
               // padding: EdgeInsets.only(right: 10,left: 10),
                 ),
               ),
             ),
-
-
-
-
-
-
-                  //space between list and button
-            SizedBox(height: size.height/35),
+    
+    
+    
+    
+    
+    
+                  //space between list and amount box
+                  SizedBox(height: size.height/400),
           
+                
+    
+    
+    
+                //amount of the payment
+                            SizedBox(
+                      
+                              height: size.height/20,
+                              width: size.width/1.2,
+                     
+                              child: TextField(
+                      
+                                controller: myController,
+    
+                                 keyboardType: TextInputType.number,
+                              
+                                decoration: InputDecoration(
 
-
+                                  contentPadding: const EdgeInsets.symmetric(vertical: 8,horizontal: 12),
+             
+                      
+                                  //display text
+                                        hintText:"Amount (LKR)",
+                                        hintStyle: TextStyle(
+                                         color: HexColor('#39B54A')
+                                        ),
+                                        
+                                        
+                                        border: const OutlineInputBorder(
+                                          // borderRadius: BorderRadius.circular(5.0),
+                                          borderSide: BorderSide(
+                                            color: Colors.black26,
+                                          )
+                                        ),
+                                        
+                                     ),
+                               
+                                style: TextStyle(
+                      
+                                fontSize: 16,
+                                 color: HexColor('#39B54A'),
+                                //color: Color.fromARGB(235, 158, 157, 154),
+                                letterSpacing: 0.3,
+                                
+                               
+                                
+                              ),),
+                             
+                            ),
+                          
+                             
+    
+    
+                         //space between amount box cancel button 
+                        SizedBox(height: size.height/20),
+    
+    
+    
+    
+    
              //continue button
              SizedBox(
               width: size.width/1.2,
@@ -335,25 +331,25 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                   fontSize: 18,
                   letterSpacing: 1,
                   
-                 ),),
+                 ),
+                 ),
              
-                         ),
+               ),
              ),
              
            
-
+    
            
           ],
         ),
       ),
-
+    
                   ],
                 )
                 )
-          
-        
+
+                
       );
-   
 
   }
 }
