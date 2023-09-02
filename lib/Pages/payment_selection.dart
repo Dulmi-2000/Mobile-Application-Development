@@ -66,7 +66,7 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                 //text- pay here
                 const Text("Pay Here",
                 style: TextStyle(
-                  fontSize: 35,
+                  fontSize: 32,
                   fontWeight: FontWeight.w900,
                 ),
                 ),
@@ -93,7 +93,7 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
               
     
                //image
-                Image.asset("assets/pay.png",
+                Image.asset("pay.png",
                 height: size.height/2.078,
                 width: size.width/1.2,
                 ),
@@ -348,7 +348,7 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                 )
                 )
 
-                
+
       );
 
   }
