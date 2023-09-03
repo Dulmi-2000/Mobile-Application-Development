@@ -24,7 +24,7 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
 
 
   //list of items for the dropdown list
-  var items=["Fee Type","Gym Fees","Club Fees","Pool"];
+  var items=["Gym Fees","Club Fees","Pool"];
   
 
   @override
@@ -129,9 +129,10 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
             SizedBox(
 
 
-              //height and with of the list
-            height: size.height/12,
-              width: size.width/1.2,
+
+              //height and width of the list
+               height: size.height/20,
+               width: size.width/1.2,
               
     
     
@@ -229,7 +230,7 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
               //style of dropdown list
                 dropdownStyleData: DropdownStyleData(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(6),
+                    borderRadius: BorderRadius.circular(5),
                     
                   ),
                 ),
@@ -239,7 +240,7 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
                 menuItemStyleData:  const MenuItemStyleData(
              
                 
-                padding: EdgeInsets.symmetric(horizontal: 16),
+                padding: EdgeInsets.symmetric(horizontal: 10),
              
               // padding: EdgeInsets.only(right: 10,left: 10),
                 ),
@@ -252,7 +253,9 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
     
     
                   //space between list and amount box
-                  SizedBox(height: size.height/400),
+                  SizedBox(
+                    height: size.height/40,
+                    ),
           
                 
     
@@ -308,41 +311,44 @@ class _PaymentFirstPageState extends State<PaymentFirstPage> {
     
     
                          //space between amount box cancel button 
-                        SizedBox(height: size.height/20),
+                        SizedBox(
+                          height: size.height/20
+                          ),
     
     
     
-    
-    
-             //continue button
-             SizedBox(
-              width: size.width/1.2,
-              height: size.height/21,
-             
-               child: ElevatedButton(
-               style: ElevatedButton.styleFrom(
-               backgroundColor: HexColor("#39B54A"),
-              ),
-                onPressed:() {
-                  
-                },
-                 child: const Text('Continue',
-                 style: TextStyle(
-                  fontSize: 18,
-                  letterSpacing: 1,
-                  
-                 ),
-                 ),
-             
-               ),
-             ),
-             
+
+                   //continue button
+
+                             SizedBox(
+                               height: size.height/20,
+                              width: size.width/1.2,
+                             
+                      
+                             
+                   child: ElevatedButton(
+                   style: ElevatedButton.styleFrom(
+                   backgroundColor: HexColor("#39B54A"),
+                  ),
+                    onPressed:() {
+                      
+                    },
+                      
+                      
+                     child: const Text('Continue',
+                     style: TextStyle(
+                      fontSize: 17,
+                      letterSpacing: 0.3,
+
+                      
+                        ),
+                       ),      
+                      ),
+                     ),
            
-    
-           
-          ],
-        ),
-      ),
+                        ],
+                       ),
+                     ),
     
                   ],
                 )
