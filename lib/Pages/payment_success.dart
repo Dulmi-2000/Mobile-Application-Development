@@ -11,6 +11,7 @@ class SuccesfulPaymentPage extends StatelessWidget{
 Size size=MediaQuery.of(context).size; 
 
 return Scaffold(
+  
     body: Container(
 
       //height and width for the page
