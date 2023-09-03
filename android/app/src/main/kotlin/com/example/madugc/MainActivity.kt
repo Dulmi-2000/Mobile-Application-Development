@@ -1,4 +1,4 @@
-package com.example.npaly_application
+package com.example.madugc
 
 import io.flutter.embedding.android.FlutterActivity
 

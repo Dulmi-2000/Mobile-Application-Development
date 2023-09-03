@@ -70,6 +70,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
+  flutter_otp_text_field:
+    dependency: "direct dev"
+    description:
+      name: flutter_otp_text_field
+      sha256: c9164ba391071fb9783698256ddbb9efc960cfed056d843db164711c65b1b114
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -185,4 +193,4 @@ packages:
     source: hosted
     version: "2.1.4"
 sdks:
-  dart: ">=3.0.6 <4.0.0"
+  dart: ">=3.0.1 <4.0.0"

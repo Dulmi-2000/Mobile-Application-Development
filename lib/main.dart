@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:madugc/pages/forgotpassword.dart';
+import 'package:madugc/pages/signin.dart';
 
-import 'Pages/splash_page.dart';
-
-void main() {
-  runApp(const MyApp());
+void main(){
+  runApp(rec());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
+class rec extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      
-      home: SplashPage(),///////////
-      
+    // TODO: implement build
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: signin()
     );
   }
 }
