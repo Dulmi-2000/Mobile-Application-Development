@@ -20,7 +20,7 @@ class PaymentHistory extends StatelessWidget{
 
           title: const Padding(
             padding: EdgeInsets.only(left: 15),
-            child: Text("Payment History",
+            child: Text("Payments",
             style: TextStyle(
               fontSize: 22,
               letterSpacing: 0.3,
@@ -56,6 +56,7 @@ class PaymentHistory extends StatelessWidget{
             ),
 
            
+
             
             //payment history
                  const Padding(
@@ -72,7 +73,7 @@ class PaymentHistory extends StatelessWidget{
                         child: SizedBox(
                           child: Text("Date",
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
                           ),
                         ),
@@ -87,7 +88,7 @@ class PaymentHistory extends StatelessWidget{
                         child: SizedBox(
                           child: Text("Description",
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
                           ),
                       
@@ -101,9 +102,9 @@ class PaymentHistory extends StatelessWidget{
                       Expanded(
                         flex: 1,
                         child: SizedBox(
-                          child: Text("Amount (LKR)",
+                          child: Text("Amount (Rs)",
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                           ),
                           ),
                       
@@ -206,6 +207,8 @@ class PaymentHistory extends StatelessWidget{
                  Container(
                   height: size.height/50,
                  ),
+
+
 
             //horizontal line
             Container(
