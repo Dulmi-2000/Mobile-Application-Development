@@ -376,12 +376,7 @@ String dropdownError = '';
                                     errorMaxLines: 1,
                                     errorStyle: const TextStyle(
                                     color: Colors.red,
-                                    fontSize: 13,
-                                    
-                            
-                            
-                            
-                                   
+                                    fontSize: 13,    
                                   ),
                             
                             
@@ -473,8 +468,6 @@ void doValidation() {
     if (dropdownvalue != "Fee Type" && userAmount.isNotEmpty) {
       try {
 
-
-
         
         int parsedAmount = int.parse(userAmount);
 
@@ -487,7 +480,7 @@ void doValidation() {
           }
 
 
-        else if(parsedAmount > 100) {
+        else if(parsedAmount >= 100) {
           // Both dropdown and text field are valid
           
           
