@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:npaly_application/Pages/payment_history.dart';
+import 'package:npaly_application/Pages/payment_selection.dart';
 
 
 class PaymentMainPage extends StatelessWidget{
@@ -11,6 +13,8 @@ class PaymentMainPage extends StatelessWidget{
     Size size=MediaQuery.of(context).size; 
 
     return Scaffold(
+
+      
     
       //background color of the page
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
@@ -108,7 +112,17 @@ class PaymentMainPage extends StatelessWidget{
                         ),
                         ),
                            onPressed:() {
-                                      
+
+
+
+                            //navigation to payment_selection page
+                            
+                         Navigator.push(context,
+                         MaterialPageRoute(builder: (context) =>  const PaymentFirstPage()),);
+
+
+
+
                             },
                              child: const Padding(
                                padding: EdgeInsets.all(10.0),
@@ -141,10 +155,15 @@ class PaymentMainPage extends StatelessWidget{
 
 
                     // button for payment history    
-                   Container(
+                   SizedBox(
+
+
                   height: size.height / 20,
                   width: size.width / 1.4,
+
+
                   child: OutlinedButton(
+
                   style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
@@ -159,6 +178,17 @@ class PaymentMainPage extends StatelessWidget{
                   ),
                  ),
                 onPressed: () {
+
+
+                       //navigation
+                    /*   
+                         Navigator.push(context,
+                         MaterialPageRoute(builder: (context) =>  const PaymentHistory()),);
+
+*/
+
+
+
                 // Button action
                 },
                   child: const Padding(
