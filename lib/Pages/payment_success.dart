@@ -1,9 +1,10 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:npaly_application/Pages/payment_main_page.dart';
 
 class SuccesfulPaymentPage extends StatelessWidget{
-  const SuccesfulPaymentPage({super.key});
+  const SuccesfulPaymentPage({super.key, required String inputText});
 
   @override
   Widget build(BuildContext context){
@@ -130,6 +131,13 @@ return Scaffold(
             child: ElevatedButton(
               onPressed:() {
                 
+                  
+                  
+                         Navigator.push(context,
+                         MaterialPageRoute(builder: (context) =>  const PaymentMainPage()),);
+
+
+
               },
           
               style: ElevatedButton.styleFrom(
