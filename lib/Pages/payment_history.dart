@@ -33,7 +33,11 @@ class PaymentHistory extends StatelessWidget{
 
           //to chnge app bar size
 
-          //bottom: PreferredSize( preferredSize: Size.fromHeight(0.5), child: Text("Payment History"),),
+           bottom:  const PreferredSize( 
+            preferredSize: Size.fromHeight(0.01), 
+            child: Padding(padding: EdgeInsets.only(left: 15),
+            ),
+            ),
         ),
 
 
