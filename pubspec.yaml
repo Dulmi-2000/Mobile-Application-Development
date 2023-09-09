@@ -41,6 +41,8 @@ dependencies:
   dropdown_button2: ^2.3.9
   device_preview: ^1.1.0
   string_validator: ^1.0.0
+  flutter_credit_card: ^3.0.7
+  credit_card_type_detector: ^3.0.0
 
 dev_dependencies:
   flutter_test:
