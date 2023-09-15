@@ -5,7 +5,7 @@ import 'package:npaly_application/Pages/payment_selection.dart';
 
 
 class PaymentMainPage extends StatelessWidget{
-  const PaymentMainPage({super.key});
+  const PaymentMainPage({super.key, required String inputText});
 
   @override
   Widget build(BuildContext context){
@@ -68,8 +68,8 @@ class PaymentMainPage extends StatelessWidget{
     
                //image
                 Image.asset("pay.png",
-                height: size.height/2.078,
-                width: size.width/1.2,
+                height: size.height/2.35,
+                width: size.width/1.1,
                 ),
     
               
@@ -89,7 +89,7 @@ class PaymentMainPage extends StatelessWidget{
 
                    //space in between text and image
                 SizedBox(
-                  height: size.height/45,
+                  height: size.height/55,
                 ),
     
 
@@ -118,22 +118,19 @@ class PaymentMainPage extends StatelessWidget{
                             //navigation to payment_selection page
                             
                          Navigator.push(context,
-                         MaterialPageRoute(builder: (context) =>  const PaymentFirstPage()),);
+                         MaterialPageRoute(builder: (context) =>  const PaymentFirstPage(inputText: '',)),);
 
 
 
 
                             },
-                             child: const Padding(
-                               padding: EdgeInsets.all(10.0),
-                                child: Text('Pay Now',
-                                style: TextStyle(
-                                 fontSize: 18,
-                                 letterSpacing: 0.5,
-                                        
-                                 ),
-                                 ),
-                                ),
+                             child: Text('Pay Now',
+                             style: TextStyle(
+                              fontSize: 18,
+                              letterSpacing: 0.5,
+                                     
+                              ),
+                              ),
                                  
                              ),
                           ),
@@ -181,18 +178,15 @@ class PaymentMainPage extends StatelessWidget{
 
 
                        //navigation
-                    /*   
+                    
                          Navigator.push(context,
                          MaterialPageRoute(builder: (context) =>  const PaymentHistory()),);
 
-*/
 
 
 
                 // Button action
                 },
-                  child: const Padding(
-                  padding: EdgeInsets.all(10.0),
                   child: Text(
                   'Payments History',
                  style: TextStyle(
@@ -200,7 +194,6 @@ class PaymentMainPage extends StatelessWidget{
                 letterSpacing: 0.5,
                 ),
               ),
-             ),
             ),
          )
 
