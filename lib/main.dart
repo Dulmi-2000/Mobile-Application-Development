@@ -1,10 +1,12 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+import 'package:npaly_application/Pages/home_page.dart';
 
-import 'Pages/splash_page.dart';
-
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(
+  DevicePreview(
+    builder:(context) => const MyApp()
+     ),
+  );
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       
-      home: SplashPage(),///////////
+      home: HomePage(),///////////
       
       debugShowCheckedModeBanner: false,
     );
