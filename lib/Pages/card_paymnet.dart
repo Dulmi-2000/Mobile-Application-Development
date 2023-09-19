@@ -1,11 +1,9 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:npaly_application/Pages/payment_success.dart';
 import 'card_validator.dart';
-import 'package:intl/intl.dart';
 
 
 
@@ -39,7 +37,7 @@ String  cardNum='';
 String  cardExp='';
 String  cardCVC='';
 
-  bool hasError = false;
+bool hasError = false;
 
 
   // Default selected value of radio button
@@ -170,7 +168,7 @@ String  cardCVC='';
                       //large container
                       Container(
                       
-                           height: size.height/2.4,
+                           height: size.height/2.2,
                            width: size.width/1.125,
                       
                       
@@ -225,7 +223,7 @@ String  cardCVC='';
 
                                         constraints: BoxConstraints(
                                            minHeight: size.height/20,
-                                          minWidth: size.width/1.2/2.058,
+                                           minWidth: size.width/1.2/2.058,
                                         ),
                                         
                                         
@@ -233,7 +231,7 @@ String  cardCVC='';
                                                            
                                           height: size.height/22,
                                           width: size.width/1.2/2.058,
-                                        padding: const EdgeInsets.all(1.0),
+                                          padding: const EdgeInsets.all(1.0),
                                                            
                                         decoration:BoxDecoration(
                                       
@@ -265,7 +263,9 @@ String  cardCVC='';
                                                    
                                                    
                                                    fillColor: MaterialStateColor.resolveWith((states) => HexColor("#39B54A")),
+                                                   //onChanged: (value1) => _handleRadioValueChange(value1),
                                                    onChanged: (value1) => _handleRadioValueChange(value1),
+                                                   
                                             ),
                                                                       
                                         ),
@@ -289,8 +289,8 @@ String  cardCVC='';
                                          //master button
                                       Container(
                                                          
-                                        height: size.height/20,
-                                        width: size.width/1.2/2.058,
+                                      height: size.height/20,
+                                      width: size.width/1.2/2.058,
                                                          
                                       decoration:BoxDecoration(
                                       borderRadius: BorderRadius.circular(5),
@@ -298,6 +298,7 @@ String  cardCVC='';
                                       color: HexColor("#39B54A")
                                        )
                                       ),
+                                     
                                       child: RadioListTile(
                                                 dense: true,
                                                 controlAffinity: ListTileControlAffinity.leading,
@@ -327,8 +328,7 @@ String  cardCVC='';
                                 
                                   ),
                                 
-                                   
-                                
+                                 
                                 
                                                 
                                                 
@@ -372,7 +372,7 @@ String  cardCVC='';
                                     LengthLimitingTextInputFormatter(22),
                                 
                                   ///////////////////////////////////calling
-                                       CardNumberFormatter(),
+                                     CardNumberFormatter(),
                                 
                                    ],
                                 
@@ -414,11 +414,16 @@ String  cardCVC='';
                                 
                                       //error message
                                      errorText: cardNumError.isNotEmpty ? cardNumError : null,
+                                     /*
+                                      errorText: (cardNum.length < 16 || expDateError.isNotEmpty)
+                                           ? cardNumError
+                                             : null,
+                                     */
                                       errorMaxLines: 1,
                                       errorStyle: const TextStyle(
                                       color: Colors.red,
                                       fontSize: 12.5,    
-                                    ),
+                                     ),
                                           
                                        ),
                                      
@@ -432,7 +437,7 @@ String  cardCVC='';
                                   //color: Color.fromARGB(235, 158, 157, 154),
                                   letterSpacing: 0.3,
                                   
-                                 
+                   
                                   
                                 ),
                                 ),
@@ -460,7 +465,7 @@ String  cardCVC='';
                              
                              ConstrainedBox(
                              
-                               constraints: BoxConstraints(
+                                    constraints: BoxConstraints(
                                     minHeight: size.height/35,
                                     maxWidth: size.width/1.2,
                                ),
@@ -487,6 +492,7 @@ String  cardCVC='';
                                     /////////////////////////////
                                     doValidationExpDate();
                                     cardExp=value;
+                                  
                                   },
 
                                 
@@ -514,13 +520,13 @@ String  cardCVC='';
                                                 hintText: 'MM/YY',
                                                 hintStyle: TextStyle(
                                                   //text color
-                                               color: HexColor("B0B0B0"),
+                                                color: HexColor("B0B0B0"),
                                                 ),
                                                 
                                                 
-                                                border:  OutlineInputBorder(
-                                                  // borderRadius: BorderRadius.circular(5.0),
-                                                  borderSide: BorderSide(
+                                                    border:  OutlineInputBorder(
+                                                     // borderRadius: BorderRadius.circular(5.0),
+                                                    borderSide: BorderSide(
                                                     color: HexColor("B0B0B0"),
                                                   )
                                                 ),
@@ -532,7 +538,7 @@ String  cardCVC='';
                                       //error message
                                       //errorText: hasError ? expDateError : null,
                                       errorText: expDateError.isNotEmpty ? expDateError : null,
-                                      errorMaxLines: 2,
+                                      errorMaxLines: 1,
                                       errorStyle: const TextStyle(
                                         
                                       color: Colors.red,
@@ -550,10 +556,10 @@ String  cardCVC='';
                                         letterSpacing: 0.3,
                                         
                                         
-                                      ),
-                                      ),
-                                     
+                                     ),
                                     ),
+                                     
+                                  ),
                                  
                                
                                                        
@@ -581,14 +587,17 @@ String  cardCVC='';
                                   child: TextField(
                                                    
                                     controller: myController3,
+
                                     onChanged: (value) {
                                     setState(() {
-                                       cardNum = value;
+                                       
 
                                         //doValidation();
                                         cardCVC=value;
                                         doValidationCVC();
-                                    });
+
+                                    }
+                                    );
                                     },
 
                                      keyboardType: TextInputType.number,
@@ -628,7 +637,7 @@ String  cardCVC='';
                                      errorText: cvcError.isNotEmpty ? cvcError : null,
                                      //errorText: cvcError.isEmpty ? null : cvcError,
 
-                                      errorMaxLines: 2,
+                                      errorMaxLines: 1,
                                       errorStyle: const TextStyle(
                                       color: Colors.red,
                                       fontSize: 12.5,    
@@ -664,7 +673,7 @@ String  cardCVC='';
                             //space between text and the button
                             SizedBox(
                               width: size.width/1.3,
-                             height: size.height/25,
+                             height: size.height/20,
                             ),
                                                 
                                                 
@@ -684,7 +693,7 @@ String  cardCVC='';
                                              backgroundColor: HexColor("#39B54A"),
                                             ),
                                               onPressed:() {
-                                                
+                                              
                                              
                                doValidationCardNum();
                                doValidation();
@@ -775,24 +784,24 @@ cardNumError = cardNum.isNotEmpty ? '' : 'Please enter a Card Number.';
 
    if (cardNum.isEmpty) {
         setState(() {
-        cardNumError = 'Please enter a Card Number.';
+        cardNumError = 'Please enter a valid Card Number.';
         });
       }
-      
-      //if not empty  
-     else if(cardNum.length==16){
+        //if not empty  
+    /*  else if(cardNum.isNotEmpty){
         setState(() {
-        cardNumError = '.';
+          cardNumError='';
         });
-
       }
-   else if (cardNum.length <16) {
+    else if(cardNum.length>1 || cardNum.length==16){
+       setState(() {
+          cardNumError='';
+        });
+    }*/
+        else if (cardNum.length <16) {
         setState(() {
         cardNumError = 'Card Number is invalid!.';
-        });
-
-      }
-      
+        });}
 
  }
  
@@ -823,12 +832,7 @@ cardNumError = cardNum.isNotEmpty ? '' : 'Please enter a Card Number.';
         });
     }
     
-  //if not empty
-   else if (cardExp.isNotEmpty) {
-        setState(() {
-        expDateError = '';
-        });
-      }
+
    
  
  }
@@ -836,13 +840,9 @@ cardNumError = cardNum.isNotEmpty ? '' : 'Please enter a Card Number.';
 
   doValidationCVC(){
 
-   if (cardCVC.isNotEmpty) {
-        setState(() {
-        cvcError = '';
-        });
-      }
+
   
-   else if (cardCVC.isEmpty) {
+   if (cardCVC.isEmpty) {
         setState(() {
         cvcError = ' Enter the CVC.';
         });
@@ -851,6 +851,16 @@ cardNumError = cardNum.isNotEmpty ? '' : 'Please enter a Card Number.';
    }
 
 
+
+void doValidationRadio(){
+  //Display an error message for the radio button
+
+      if(selectedValue==0){
+             setState(() {
+        radioError = 'Please select Visa/Master';
+      });
+      }
+}
 
 
 
@@ -870,6 +880,7 @@ void doValidation(){
         );
       } 
     
+
     }     
    }
  }
