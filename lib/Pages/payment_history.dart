@@ -78,6 +78,7 @@ class PaymentHistory extends StatelessWidget{
                           child: Text("Date",
                           style: TextStyle(
                             fontSize: 18,
+                            fontWeight: FontWeight.w600,
                           ),
                           ),
                         ),
@@ -93,6 +94,7 @@ class PaymentHistory extends StatelessWidget{
                           child: Text("Description",
                           style: TextStyle(
                             fontSize: 18,
+                            fontWeight: FontWeight.w600,
                           ),
                           ),
                       
@@ -109,6 +111,7 @@ class PaymentHistory extends StatelessWidget{
                           child: Text("Amount (Rs)",
                           style: TextStyle(
                             fontSize: 18,
+                            fontWeight: FontWeight.w600,
                           ),
                           ),
                       
@@ -124,88 +127,101 @@ class PaymentHistory extends StatelessWidget{
               
               //space between columns
               Container(
-                height: size.height/40,
+                height: size.height/80,
               ),
 
 
 
 
 
-                          //payment history
-                          ///////////////////////////////////////////////////////////
-                          ///sample values////
-             /*    const SizedBox(
-                  child: Row(
-                   
-                  children: [
-                   
-                 
-                   //date
-                    Expanded(
-                      flex: 1,
-                      child: SizedBox(
 
-                        child: Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Column(
-                            children: [
-                        
-                        
-                              Text("31 Aug 2023",
-                              style: TextStyle(
-                                fontSize: 16,
-                              ),
-                              ),
-                        
-                        
-                              Text("10.37",
-                              style: TextStyle(
-                                fontSize: 16,),
-                              ),
-                            ],
+
+            //horizontal line
+            Container(
+                height: size.height/650,
+                color: HexColor('#39B54A'),
+            ),
+
+                   
+
+               //space between columns
+              Container(
+                height: size.height/80,
+              ),
+
+
+            
+            //payment history sample/////////////
+                 const Padding(
+                   padding: EdgeInsets.all(10.0),
+                   child: SizedBox(
+                    child: Row(
+                     
+                    children: [
+                     
+                 
+                     //date
+                      Expanded(
+                        flex: 1,
+                        child: SizedBox(
+                          child: Text("31 Aug 2023\n\n10:37 AM ",
+                          style: TextStyle(
+                            fontSize: 15,
+                            
+                          ),
                           ),
                         ),
-                        
                       ),
-                    ),
                  
                  
                  
                  
-                     //description
-                    Expanded(
-                      flex: 1,
-                      child: SizedBox(
-                        child: Text("Gym Fees",
-                        style: TextStyle(
-                          fontSize: 16,
+                       //description
+                      Expanded(
+                        flex: 1,
+                        child: SizedBox(
+                          child: Text("Gym Fees",
+                          style: TextStyle(
+                            fontSize: 16,
+                            
+                          ),
+                          ),
+                      
                         ),
-                        ),
-                    
                       ),
-                    ),
-                               
-                    
+                                 
+                      
                  
                  
-                     //amount
-                    Expanded(
-                      flex: 1,
-                      child: SizedBox(
-                        child: Text("1000.00",
-                        style: TextStyle(
-                          fontSize: 16,
+                       //amount
+                      Expanded(
+                        flex: 1,
+                        child: SizedBox(
+                          child: Text("1000.00",
+                          style: TextStyle(
+                            fontSize: 16,
+                            
+                          ),
+                          ),
+                      
                         ),
-                        ),
-                    
                       ),
-                    ),
     
-                  ],
-                  
+                    ],
+                    
+                    ),
                   ),
-                  ),
-*/
+                 ),
+                    //space between line and data
+              Container(
+                height: size.height/80,
+              ),
+
+
+
+                    
+
+
 
                  //space between content and line
                  Container(
@@ -230,6 +246,9 @@ class PaymentHistory extends StatelessWidget{
 
         ),
 
+
+
       );
+
   }
 }
