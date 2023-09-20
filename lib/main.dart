@@ -1,6 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:npaly_application/Pages/RequestLettersPage.dart';
+import 'Pages/RequestLettersPage.dart';
 
 
 void main() => runApp(
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       
-      home: RequestLettersPage(),///////////
+      home: RequestLettersPage(inputText: '',),///////////
       
       debugShowCheckedModeBanner: false,
     );

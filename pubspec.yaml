@@ -38,6 +38,7 @@ dependencies:
   eva_icons_flutter: ^3.1.0
   hexcolor: ^3.0.1
   device_preview: ^1.1.0
+  time_range_picker: ^2.2.0
 
 dev_dependencies:
   flutter_test:
