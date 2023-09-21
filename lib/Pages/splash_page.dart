@@ -1,52 +1,67 @@
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
+import 'package:npaly_application/Pages/home_page.dart';
 
-// ignore: camel_case_types
-class splashPage extends StatelessWidget {
-  const splashPage({super.key});
+import 'package:npaly_application/Pages/nav_bar.dart';
 
-  get title => null;
+class SplashPage extends StatefulWidget {
+  const SplashPage({super.key});
+
+  @override
+  State<SplashPage> createState() => _SplashPageState();
+}
+
+class _SplashPageState extends State<SplashPage> {
+  @override
+  void initState() {
+    super.initState();
+    // Add a delay (e.g., using Future.delayed) to simulate the splash screen.
+    Future.delayed(const Duration(seconds: 3), () {
+      // Navigate to the HomePage after the splash screen is done.
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(builder: (context) => const HomePage()),
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
     return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: HexColor('#39B54A'),
-      ),
-      body: Column(
-        children: [
-          // Space at the top of the page
-          SizedBox(
-            height: size.height / 8,
-            width: size.width,
-          ),
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+        body: Center(
+          child: Column(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
 
-          // Horizontal scrolling row of green containers
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: [
-                // Green color containers
-                for (int i = 0; i < 8; i++)
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      height: size.height / 15,
-                      width: size.width / 5,
-                      decoration: BoxDecoration(
-                        color: HexColor('#39B54A'),
-                        borderRadius: BorderRadius.circular(5),
-                      ),
+            //////////////////change this code////////////////////////////////
+
+            children: [
+              Expanded(
+                flex: 4,
+                child: SizedBox(
+                  width: double.infinity,
+                  //padding: const EdgeInsets.only(right: 10),
+
+                  child: Center(
+                    child: Image.asset(
+                      "assets/logo1.png",
+                      height: size.height / 5,
+                      width: size.width / 4,
                     ),
                   ),
-              ],
-            ),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Center(
+                    child: Container(
+                  padding: const EdgeInsets.all(30),
+                  //  child: Image.asset("assets/logo2.png")
+                )),
+              )
+            ],
           ),
-        ],
-      ),
-    );
+        ));
   }
 }
