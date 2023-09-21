@@ -40,6 +40,12 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
 <<<<<<< HEAD
+  eva_icons_flutter: ^3.1.0
+  hexcolor: ^3.0.1
+  device_preview: ^1.1.0
+  time_range_picker: ^2.2.0
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
   hexcolor: ^3.0.1
   eva_icons_flutter: ^3.1.0
@@ -86,6 +92,7 @@ dependencies:
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 
 #  device_preview: ^1.1.0
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
 
 dev_dependencies:
   flutter_test:

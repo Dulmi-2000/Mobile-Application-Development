@@ -50,6 +50,8 @@ packages:
     source: hosted
     version: "1.17.2"
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   credit_card_type_detector:
     dependency: "direct main"
     description:
@@ -81,6 +83,7 @@ packages:
 >>>>>>> origin/development
 >>>>>>> d5d403fd716f9378d88b6a3c53449d8a9af6a590
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -95,6 +98,8 @@ packages:
     version: "1.0.5"
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
     version: "1.0.6"
 >>>>>>> af96ebcd16ba8cc931d715eb95efd4fe116aea0a
@@ -103,6 +108,7 @@ packages:
 =======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   device_frame:
     dependency: transitive
     description:
@@ -119,6 +125,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
   dropdown_button2:
@@ -137,6 +145,7 @@ packages:
 <<<<<<< HEAD
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   eva_icons_flutter:
     dependency: "direct main"
     description:
@@ -147,6 +156,8 @@ packages:
     version: "3.1.0"
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> af96ebcd16ba8cc931d715eb95efd4fe116aea0a
 <<<<<<< HEAD
@@ -154,6 +165,7 @@ packages:
 =======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   fake_async:
     dependency: transitive
     description:
@@ -178,6 +190,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.1.4"
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -220,6 +234,7 @@ packages:
 =======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   flutter:
     dependency: "direct main"
     description: flutter
@@ -246,6 +261,8 @@ packages:
 <<<<<<< HEAD
     version: "2.0.2"
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   flutter_otp_text_field:
     dependency: "direct dev"
     description:
@@ -265,11 +282,14 @@ packages:
 =======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   flutter_localizations:
     dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -293,11 +313,26 @@ packages:
 >>>>>>> d5d403fd716f9378d88b6a3c53449d8a9af6a590
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 >>>>>>> origin/development
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< HEAD
+  flutter_web_plugins:
+    dependency: transitive
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      sha256: c3fd9336eb55a38cc1bbd79ab17573113a8deccd0ecbbf926cca3c62803b5c2d
+      url: "https://pub.dev"
+    source: hosted
+=======
 <<<<<<< HEAD
   intl:
     dependency: transitive
@@ -329,6 +364,7 @@ packages:
       sha256: c3fd9336eb55a38cc1bbd79ab17573113a8deccd0ecbbf926cca3c62803b5c2d
       url: "https://pub.dev"
     source: hosted
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
     version: "2.4.1"
   hexcolor:
     dependency: "direct main"
@@ -338,6 +374,11 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.1"
+<<<<<<< HEAD
+  intl:
+    dependency: transitive
+    description:
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
   intl:
@@ -428,11 +469,14 @@ packages:
   intl:
     dependency: "direct main"
     description:
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
       name: intl
       sha256: "3bc132a9dbce73a7e4a21a17d06e1878839ffbf975568bc875c60537824b0c4d"
       url: "https://pub.dev"
     source: hosted
     version: "0.18.1"
+<<<<<<< HEAD
+=======
   js:
 >>>>>>> af96ebcd16ba8cc931d715eb95efd4fe116aea0a
     dependency: transitive
@@ -471,6 +515,7 @@ packages:
 =======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   json_annotation:
     dependency: transitive
     description:
@@ -479,7 +524,10 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.8.1"
+<<<<<<< HEAD
+=======
 >>>>>>> origin/development
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   lints:
     dependency: transitive
     description:
@@ -524,6 +572,8 @@ packages:
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
   mime:
     dependency: transitive
     description:
@@ -546,6 +596,7 @@ packages:
 =======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   nested:
     dependency: transitive
     description:
@@ -563,6 +614,8 @@ packages:
     source: hosted
     version: "1.8.3"
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   simple_gesture_detector:
     dependency: transitive
     description:
@@ -572,6 +625,7 @@ packages:
     source: hosted
     version: "0.2.0"
 =======
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   path_provider_linux:
     dependency: transitive
     description:
@@ -621,6 +675,8 @@ packages:
     source: hosted
     version: "6.0.5"
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   responsive_navigation_bar:
     dependency: "direct main"
     description:
@@ -648,6 +704,7 @@ packages:
 =======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   shared_preferences:
     dependency: transitive
     description:
@@ -704,7 +761,10 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.1"
+<<<<<<< HEAD
+=======
 >>>>>>> origin/development
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   sky_engine:
     dependency: transitive
     description: flutter
@@ -786,6 +846,16 @@ packages:
     source: hosted
     version: "0.6.0"
 <<<<<<< HEAD
+  time_range_picker:
+    dependency: "direct main"
+    description:
+      name: time_range_picker
+      sha256: "63c3e0beba3c261f7d95e9a2ecef3a3e0bc88d4874edbbef4471c1a60c228526"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -807,6 +877,7 @@ packages:
 >>>>>>> origin/development
 >>>>>>> d5d403fd716f9378d88b6a3c53449d8a9af6a590
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
   vector_math:
     dependency: transitive
     description:
@@ -823,6 +894,27 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.1.4-beta"
+<<<<<<< HEAD
+  win32:
+    dependency: transitive
+    description:
+      name: win32
+      sha256: c97defd418eef4ec88c0d1652cdce84b9f7b63dd7198e266d06ac1710d527067
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.0.8"
+  xdg_directories:
+    dependency: transitive
+    description:
+      name: xdg_directories
+      sha256: "589ada45ba9e39405c198fe34eb0f607cddb2108527e658136120892beac46d2"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.3"
+sdks:
+  dart: ">=3.1.0-185.0.dev <4.0.0"
+  flutter: ">=3.7.0"
+=======
 <<<<<<< HEAD
 sdks:
 <<<<<<< HEAD
@@ -867,3 +959,4 @@ sdks:
   flutter: ">=3.7.0"
 >>>>>>> origin/development
 >>>>>>> origin/development
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4

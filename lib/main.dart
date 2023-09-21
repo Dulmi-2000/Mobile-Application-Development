@@ -1,4 +1,10 @@
 <<<<<<< HEAD
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/material.dart';
+import 'Pages/RequestLettersPage.dart';
+
+=======
+<<<<<<< HEAD
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
@@ -31,6 +37,7 @@ void main() => runApp(
 
 <<<<<<< HEAD
 /*
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
 
 void main() {
   runApp(const MyApp());
@@ -59,6 +66,12 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
+    return const MaterialApp(
+      
+      home: RequestLettersPage(inputText: '',),///////////
+      
+=======
     return MaterialApp(
       home: EventCalender(),
 =======
@@ -95,6 +108,7 @@ class rec extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
       debugShowCheckedModeBanner: false,
       home: signin()
     );
