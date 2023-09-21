@@ -2,7 +2,7 @@ name: npaly_application
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
+  sdk: ">=3.0.6 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -31,10 +31,10 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+<<<<<<< HEAD
   hexcolor: ^3.0.1
   eva_icons_flutter: ^3.1.0
   window_style_dropdown_menu: ^1.0.0+3
@@ -47,6 +47,20 @@ dependencies:
   responsive_navigation_bar: ^4.0.4
   animated_toggle_switch: ^0.8.0
   lite_rolling_switch: ^1.0.1
+=======
+<<<<<<< HEAD
+  eva_icons_flutter: ^3.1.0
+  hexcolor: ^3.0.1
+  device_preview: ^1.1.0
+=======
+  modern_form_line_awesome_icons: ^2.0.1
+  hexcolor: ^3.0.1
+  image_picker: ^1.0.4
+  device_preview: ^1.1.0
+  riverpod: ^2.4.0
+  intl: ^0.18.1
+>>>>>>> af96ebcd16ba8cc931d715eb95efd4fe116aea0a
+>>>>>>> origin/development
 
 dev_dependencies:
   flutter_test:
@@ -64,16 +78,60 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+<<<<<<< HEAD
 assets:
    - assets/logo1.png
    - assets/pay.png
+=======
+  assets:
+    - assets/logo1.png
+<<<<<<< HEAD
+    - assets/Athletic_logo.png
+    - assets/athletic.jpg
+    - assets/chessclub.jpg
+    - assets/badmintonclub.jpg
+    - assets/cricketclub.jpg
+    - assets/martialartsclub.jpg
+    - assets/netballclub.jpg
+    - assets/rugbyclub.jpg
+    - assets/basketballclub.jpg
+    - assets/tennisclub.jpg
+    - assets/volleyballclub.jpg
+    - assets/gym.jpg
+    - assets/badminton_logo.png
+    - assets/chess_logo.jpg
+    - assets/cricket_logo.png
+    - assets/gym_logo.png
+    - assets/martialarts_logo.png
+    - assets/netball_logo.png
+    - assets/rugby_logo.jpg
+    - assets/volleyball_logo.jpg
+    - assets/table_tennis_logo.png
+=======
+    - assets/default_profile.jpg
+    - assets/default_cover.png
+    - assets/cricket_club.png
+    - assets/athletic_club.jpg
+    - assets/chess_club.jpeg
+    - assets/badminton_club.jpeg
+    - assets/basketball_club.jpg
+    - assets/martialart_club.jpg
+    - assets/netball_club.jpg
+    - assets/rugby_club.jpg
+    - assets/tabletennis_club.jpeg
+    - assets/volleyball_club.jpg
+    - assets/gym.png
+    - assets/swimming_club.jpeg
+    - assets/ground.jpg
+    - assets/rec.jpeg
+>>>>>>> af96ebcd16ba8cc931d715eb95efd4fe116aea0a
+>>>>>>> origin/development
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
