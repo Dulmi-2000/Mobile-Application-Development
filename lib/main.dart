@@ -1,22 +1,20 @@
 import 'package:flutter/material.dart';
-
-import 'Pages/splash_page.dart';
+import 'Pages/notification.dart';
+import 'Pages/event_calender.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const MaterialApp(
+    home: Home(),
+  ));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class Home extends StatelessWidget {
+  const Home({Key? key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      
-      home: SplashPage(),///////////
-      
-      debugShowCheckedModeBanner: false,
+    return MaterialApp(
+      home: EventCalender(),
     );
   }
 }
