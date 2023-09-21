@@ -4,6 +4,7 @@ import 'package:hexcolor/hexcolor.dart';
 class PaymentHistory extends StatelessWidget{
   const PaymentHistory({super.key});
 
+
   @override
   Widget build(BuildContext context)
   {
@@ -14,6 +15,7 @@ class PaymentHistory extends StatelessWidget{
 
          //background color of the page
       backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+
 
         appBar: AppBar(
 
@@ -100,6 +102,7 @@ class PaymentHistory extends StatelessWidget{
                       
                         ),
                       ),
+              
                                  
                       
                  
