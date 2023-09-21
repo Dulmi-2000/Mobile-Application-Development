@@ -1,4 +1,4 @@
-package com.example.npaly_application
+package com.example.seugc
 
 import io.flutter.embedding.android.FlutterActivity
 
