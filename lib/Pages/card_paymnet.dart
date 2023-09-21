@@ -694,9 +694,17 @@ bool hasError = false;
                                             ),
                                               onPressed:() {
                                               
-                                             
+         /*                                    
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const SuccesfulPaymentPage(inputText: ''),
+          ),
+        );*/
+
+
                                doValidationCardNum();
-                               doValidation();
+                               doValidation(context);
                                doValidationExpDate();
                                doValidationCVC();
 
@@ -864,21 +872,25 @@ void doValidationRadio(){
 
 
 
-void doValidation(){
+
+
+void doValidation(BuildContext context){
   // Check if all fields are valid and navigate
-  if (cardNum.isNotEmpty && cardNum.length == 16 && cardExp.isNotEmpty && cardCVC.isNotEmpty) {
+  if (cardNum.isNotEmpty && cardExp.isNotEmpty && cardCVC.isNotEmpty) {
    
     if (selectedValue == 1 || selectedValue == 2) {
-      DateTime givenDate = DateTime.parse(cardExp);
-      if (!isDateExpired(givenDate)) {
+      //DateTime givenDate = DateTime.parse(cardExp);
+      //if (!isDateExpired(givenDate)) {
         // Navigate to the SuccesfulPaymentPage with the inputText
+
+        
         Navigator.push(
           context,
           MaterialPageRoute(
             builder: (context) => const SuccesfulPaymentPage(inputText: ''),
           ),
         );
-      } 
+    //  } 
     
 
     }     
