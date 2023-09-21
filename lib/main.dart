@@ -1,7 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:npaly_application/Pages/card_paymnet.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:npaly_application/Pages/payment_main_page.dart';
+import 'package:npaly_application/Pages/settings_profile.dart';
+
 
 
 void main() => runApp(
@@ -10,6 +12,8 @@ void main() => runApp(
     builder: (context) => const MyApp(), // Wrap your app
   ),
 );
+
+
 /*
 
 void main() {
@@ -26,7 +30,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       
 
-      home: CardPaymentPage(),///////////
+      home: Settings(inputText: '',),
       
 
       debugShowCheckedModeBanner: false,
