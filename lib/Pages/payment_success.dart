@@ -38,7 +38,7 @@ return Scaffold(
                //right icon 
               const SizedBox(
                  child: Icon(
-                        EvaIcons.checkmarkCircle2Outline, // Choose the Eva Icon you want
+                        EvaIcons.checkmarkCircle2Outline, // the Eva Icon 
                         color: Colors.white,
                         size: 250, // Adjust the size as needed
                       ),
@@ -134,7 +134,7 @@ return Scaffold(
                   
                   
                          Navigator.push(context,
-                         MaterialPageRoute(builder: (context) =>  const PaymentMainPage()),);
+                         MaterialPageRoute(builder: (context) =>  const PaymentMainPage(inputText: '',)),);
 
 
 
