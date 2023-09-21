@@ -1,68 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
-class SplashPage extends StatelessWidget{
-  const SplashPage({super.key});
+// ignore: camel_case_types
+class splashPage extends StatelessWidget {
+  const splashPage({super.key});
+
+  get title => null;
 
   @override
-  Widget build(BuildContext context){
-  Size size=MediaQuery.of(context).size;
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
 
-     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-      
-      body: Center(
-        child: Column(
-
-         // mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-         
-
-
-
-   //////////////////change this code////////////////////////////////
-
-
-         
-         children: [
-          Expanded(
-            flex: 4,
-            child: SizedBox(
-          width: double.infinity,
-          //padding: const EdgeInsets.only(right: 10),
-
-
-
-
-
-
-            child: Center(
-              child: Image.asset("assets/logo1.png",
-              height: size.height/5,
-              width: size.width/4,
-              ),
-              ),
-            ),        
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        backgroundColor: HexColor('#39B54A'),
+      ),
+      body: Column(
+        children: [
+          // Space at the top of the page
+          SizedBox(
+            height: size.height / 8,
+            width: size.width,
           ),
 
-
-
-
-
-          Expanded(
-          flex: 1, 
-          child: Center(
-
-            child: Container(
-            
-              padding: const EdgeInsets.all(30),
-            //  child: Image.asset("assets/logo2.png")
-              )
+          // Horizontal scrolling row of green containers
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                // Green color containers
+                for (int i = 0; i < 8; i++)
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      height: size.height / 15,
+                      width: size.width / 5,
+                      decoration: BoxDecoration(
+                        color: HexColor('#39B54A'),
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                    ),
+                  ),
+              ],
             ),
-         
-           )
-          ], 
-        ),
-      )
+          ),
+        ],
+      ),
     );
-  } 
+  }
 }
