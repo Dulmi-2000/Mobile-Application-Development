@@ -38,6 +38,7 @@ dependencies:
   eva_icons_flutter: ^3.1.0
   hexcolor: ^3.0.1
   device_preview: ^1.1.0
+  line_icons: ^2.0.3
 
 
 dev_dependencies:
@@ -67,6 +68,28 @@ flutter:
     - assets/logo1.png
     - assets/nsbm-logo.png
     - assets/sports.jpg
+    - assets/nsbm-logo-best.png
+    - assets/tennis-ball.png
+    - assets/Volleyball.png
+  
+    - assets/athletic.png
+    - assets/shuttlecock.png
+    - assets/chess.png
+    - assets/Badminton.png
+    - assets/netball.png
+    - assets/Cricket.png
+    - assets/ttenis.png
+    - assets/event.png
+    - assets/payment1.png
+    - assets/attendance.png
+    - assets/letter.png
+
+
+
+    
+
+ 
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

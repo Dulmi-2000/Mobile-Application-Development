@@ -1,6 +1,7 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:npaly_application/Pages/home_page.dart';
+import 'package:npaly_application/Pages/splash_page.dart';
 
 void main() => runApp(
   DevicePreview(
