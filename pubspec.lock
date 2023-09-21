@@ -246,6 +246,16 @@ packages:
 <<<<<<< HEAD
     version: "2.0.2"
 <<<<<<< HEAD
+  flutter_otp_text_field:
+    dependency: "direct dev"
+    description:
+      name: flutter_otp_text_field
+      sha256: c9164ba391071fb9783698256ddbb9efc960cfed056d843db164711c65b1b114
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
+=======
+<<<<<<< HEAD
 =======
 =======
     version: "2.0.3"
@@ -282,6 +292,7 @@ packages:
 >>>>>>> origin/development
 >>>>>>> d5d403fd716f9378d88b6a3c53449d8a9af6a590
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> origin/development
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -814,6 +825,9 @@ packages:
     version: "0.1.4-beta"
 <<<<<<< HEAD
 sdks:
+<<<<<<< HEAD
+  dart: ">=3.0.1 <4.0.0"
+=======
   dart: ">=3.1.0-185.0.dev <4.0.0"
   flutter: ">=1.17.0"
 =======
@@ -851,4 +865,5 @@ sdks:
 sdks:
   dart: ">=3.1.0-185.0.dev <4.0.0"
   flutter: ">=3.7.0"
+>>>>>>> origin/development
 >>>>>>> origin/development

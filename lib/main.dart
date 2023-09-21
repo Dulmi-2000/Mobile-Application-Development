@@ -2,6 +2,13 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
+import 'package:madugc/pages/forgotpassword.dart';
+import 'package:madugc/pages/signin.dart';
+
+void main(){
+  runApp(rec());
+=======
+<<<<<<< HEAD
 import 'package:device_preview/device_preview.dart';
 import 'package:npaly_application/Pages/payment_main_page.dart';
 import 'package:npaly_application/Pages/settings_profile.dart';
@@ -27,6 +34,7 @@ void main() => runApp(
 
 void main() {
   runApp(const MyApp());
+>>>>>>> origin/development
 }
 */
 =======
@@ -81,6 +89,18 @@ void main() => runApp(
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 
+<<<<<<< HEAD
+class rec extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: signin()
+    );
+  }
+}
+=======
 class MyApp extends StatelessWidget {
 =======
 class MyApp extends StatefulWidget {
@@ -150,3 +170,4 @@ Icon(LineAwesomeIcons.cog)
 
 */
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
+>>>>>>> origin/development

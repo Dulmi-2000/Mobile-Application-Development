@@ -1,4 +1,4 @@
-name: npaly_application
+name: madugc
 description: A new Flutter project.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -19,7 +19,11 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
+<<<<<<< HEAD
+  sdk: '>=3.0.1 <4.0.0'
+=======
   sdk: ">=3.0.6 <4.0.0"
+>>>>>>> origin/development
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -81,10 +85,16 @@ dependencies:
 >>>>>>> d5d403fd716f9378d88b6a3c53449d8a9af6a590
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 
+#  device_preview: ^1.1.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
+<<<<<<< HEAD
+  flutter_otp_text_field: ^1.1.1
+=======
   
+>>>>>>> origin/development
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -104,6 +114,13 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
+<<<<<<< HEAD
+  assets:
+     - images/signin.png
+     - images/email.png
+     - images/otp.png
+  #   - images/a_dot_ham.jpeg
+=======
 <<<<<<< HEAD
 assets:
    - assets/logo1.png
@@ -160,6 +177,7 @@ assets:
 =======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
+>>>>>>> origin/development
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
