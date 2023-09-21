@@ -2,6 +2,24 @@ import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
+import 'Pages/notification.dart';
+import 'Pages/event_calender.dart';
+
+void main() {
+  runApp(const MaterialApp(
+    home: Home(),
+  ));
+}
+
+class Home extends StatelessWidget {
+  const Home({Key? key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: EventCalender(),
+=======
+<<<<<<< HEAD
 import 'package:npaly_application/Pages/athletic_club.dart';
 import 'package:npaly_application/Pages/basketball_club.dart';
 =======
@@ -47,6 +65,7 @@ class _MyAppState extends State<MyApp> {
 
 >>>>>>> af96ebcd16ba8cc931d715eb95efd4fe116aea0a
       debugShowCheckedModeBanner: false,
+>>>>>>> origin/development
     );
   }
 }
