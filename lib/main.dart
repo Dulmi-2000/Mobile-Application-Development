@@ -1,3 +1,21 @@
+<<<<<<< HEAD
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'Pages/attendence_event.dart';
+import 'Pages/attendence.dart';
+import 'package:device_preview/device_preview.dart';
+import 'Pages/splash_page.dart';
+
+void main() => runApp(
+  DevicePreview(
+    enabled: !kReleaseMode,
+    builder: (context) => const MyApp(), // Wrap your app
+  ),
+);
+
+
+
+=======
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -40,6 +58,7 @@ void main() => runApp(
         builder: (context) => const MyApp(), // Wrap your app
       ),
     );
+>>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 
 class MyApp extends StatelessWidget {
 =======
@@ -58,7 +77,11 @@ class _MyAppState extends State<MyApp> {
     return const MaterialApp(
 <<<<<<< HEAD
       
+<<<<<<< HEAD
+      home: TodayAttendanceEvents(inputText: '',),///////////
+=======
       home: Basketballpage(inputText: '',),///////////
+>>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
       
 =======
       home: SplashPage(), ///////////
@@ -68,6 +91,9 @@ class _MyAppState extends State<MyApp> {
 >>>>>>> origin/development
     );
   }
+<<<<<<< HEAD
+}
+=======
 }
 
 
@@ -90,3 +116,4 @@ Icon(LineAwesomeIcons.cog)
 
 
 */
+>>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
