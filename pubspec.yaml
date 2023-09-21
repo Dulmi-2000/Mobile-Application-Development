@@ -44,6 +44,9 @@ dependencies:
   flutter_credit_card: ^3.0.7
   credit_card_type_detector: ^3.0.0
   intl: ^0.18.0
+  responsive_navigation_bar: ^4.0.4
+  animated_toggle_switch: ^0.8.0
+  lite_rolling_switch: ^1.0.1
 
 dev_dependencies:
   flutter_test:
