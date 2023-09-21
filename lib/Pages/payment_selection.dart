@@ -144,7 +144,7 @@ String dropdownError = '';
                   
                     
                    //image
-                    Image.asset("pay.png",
+                    Image.asset("assets/pay.png",
                     height: size.height/2.35,
                     width: size.width/1.1,
                     
@@ -156,7 +156,9 @@ String dropdownError = '';
                   ),
                  ),
           
-                      
+
+
+
                   //space between image and dropdown list
                   SizedBox(
                   height: size.height/70,
@@ -202,9 +204,9 @@ String dropdownError = '';
                                  child: DropdownButtonFormField2<String>(
                      
                        
-                     isDense: true,
+                        isDense: true,
                                
-                     isExpanded: true,//isExpanded → bool
+                        isExpanded: true,//isExpanded → bool
                                      //Set the dropdown's inner contents to horizontally fill its parent.
                        
                        decoration: InputDecoration(
@@ -231,11 +233,9 @@ String dropdownError = '';
                                          color: Color.fromARGB(255, 212, 59, 48),
                                          fontSize: 12.5,    
                                        ),
-                                 
-                       
+                              
                                    
-                                   
-                     ),
+                        ),
                              
                                    
                        
@@ -287,8 +287,7 @@ String dropdownError = '';
                        value = value.toString();
                      },
                        
-                       
-                       
+        
                        buttonStyleData:  const ButtonStyleData(
                        padding: EdgeInsets.only(right: 10,left: 1),
                        //height: 20,
@@ -311,7 +310,7 @@ String dropdownError = '';
                        
                                
                                
-                                 //style of dropdown list
+                           //style of dropdown list
                          dropdownStyleData: DropdownStyleData(
                          decoration: BoxDecoration(
                          borderRadius: BorderRadius.circular(5),
@@ -327,7 +326,7 @@ String dropdownError = '';
                          padding: EdgeInsets.symmetric(horizontal: 10),
                                 
                                  // padding: EdgeInsets.only(right: 10,left: 10),
-                     ),
+                               ),
                                  ),
                                ),
                        
@@ -353,6 +352,7 @@ String dropdownError = '';
                                    ),
                                    
                                    
+
                                    child: TextField(
                                                        
                                      controller: myController,
@@ -382,7 +382,6 @@ String dropdownError = '';
                                              ),
                                              
                                               
-                                 
                                  
                                  
                                  
@@ -427,7 +426,7 @@ String dropdownError = '';
                          SizedBox(
                            height: size.height/20,
                            width: size.width/1.2,
-                                  
+                                   
                            
                                   
                             child: ElevatedButton(
@@ -437,12 +436,13 @@ String dropdownError = '';
                                    
                          onPressed:() {
                                    
-                                   
+
                         // doValidation(BuildContext);
                                    
     
                         doValidation();
-                                
+                            myController.clear();
+                            //////////////////////////////////////////    
                                    
                          },
                            
