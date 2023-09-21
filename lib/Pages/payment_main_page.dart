@@ -67,7 +67,7 @@ class PaymentMainPage extends StatelessWidget{
 
     
                //image
-                Image.asset("pay.png",
+                Image.asset("assets/pay.png",
                 height: size.height/2.35,
                 width: size.width/1.1,
                 ),
@@ -124,7 +124,7 @@ class PaymentMainPage extends StatelessWidget{
 
 
                             },
-                             child: Text('Pay Now',
+                             child: const Text('Pay Now',
                              style: TextStyle(
                               fontSize: 18,
                               letterSpacing: 0.5,
@@ -174,7 +174,7 @@ class PaymentMainPage extends StatelessWidget{
                  ),
                   ),
                  ),
-                onPressed: () {
+                     onPressed: () {
 
 
                        //navigation
@@ -187,7 +187,7 @@ class PaymentMainPage extends StatelessWidget{
 
                 // Button action
                 },
-                  child: Text(
+                  child: const Text(
                   'Payments History',
                  style: TextStyle(
                  fontSize: 18,
