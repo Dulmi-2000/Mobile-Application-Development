@@ -1,6 +1,19 @@
 <<<<<<< HEAD
+import 'package:device_preview/device_preview.dart';
+import 'package:flutter/material.dart';
+import 'Pages/RequestLettersPage.dart';
+
+=======
+<<<<<<< HEAD
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+import 'package:madugc/pages/forgotpassword.dart';
+import 'package:madugc/pages/signin.dart';
+
+void main(){
+  runApp(rec());
+=======
 <<<<<<< HEAD
 import 'package:device_preview/device_preview.dart';
 import 'package:npaly_application/Pages/payment_main_page.dart';
@@ -24,9 +37,11 @@ void main() => runApp(
 
 <<<<<<< HEAD
 /*
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
 
 void main() {
   runApp(const MyApp());
+>>>>>>> origin/development
 }
 */
 =======
@@ -51,6 +66,12 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
+    return const MaterialApp(
+      
+      home: RequestLettersPage(inputText: '',),///////////
+      
+=======
     return MaterialApp(
       home: EventCalender(),
 =======
@@ -81,6 +102,19 @@ void main() => runApp(
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
 >>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 
+<<<<<<< HEAD
+class rec extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+>>>>>>> 76fe2e6c38c956a1d303d188944f1411e97331f4
+      debugShowCheckedModeBanner: false,
+      home: signin()
+    );
+  }
+}
+=======
 class MyApp extends StatelessWidget {
 =======
 class MyApp extends StatefulWidget {
@@ -150,3 +184,4 @@ Icon(LineAwesomeIcons.cog)
 
 */
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
+>>>>>>> origin/development
