@@ -43,6 +43,40 @@ class _SplashPageState extends State<SplashPage> {
                   width: double.infinity,
                   //padding: const EdgeInsets.only(right: 10),
 
+<<<<<<< HEAD
+
+         
+         children: [
+          Expanded(
+            flex: 4,
+            child: SizedBox(
+          width: double.infinity,
+          //padding: const EdgeInsets.only(right: 10),
+
+
+
+
+
+
+            child: Center(
+              child: Image.asset("assets/logo1.png",
+              height: size.height/5,
+              width: size.width/2.3,
+              ),
+              ),
+            ),        
+          ),
+
+
+
+
+          ], 
+        ),
+      )
+    );
+  } 
+}
+=======
                   child: Center(
                     child: Image.asset(
                       "assets/logo1.png",
@@ -65,3 +99,4 @@ class _SplashPageState extends State<SplashPage> {
         ));
   }
 }
+>>>>>>> origin/development

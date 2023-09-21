@@ -1,10 +1,18 @@
 <<<<<<< HEAD
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+import 'package:device_preview/device_preview.dart';
+import 'package:npaly_application/Pages/payment_main_page.dart';
+import 'package:npaly_application/Pages/settings_profile.dart';
+
+
+=======
 import 'Pages/attendence_event.dart';
 import 'Pages/attendence.dart';
 import 'package:device_preview/device_preview.dart';
 import 'Pages/splash_page.dart';
+>>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 
 void main() => runApp(
   DevicePreview(
@@ -14,7 +22,16 @@ void main() => runApp(
 );
 
 
+<<<<<<< HEAD
+/*
 
+void main() {
+  runApp(const MyApp());
+}
+*/
+=======
+
+>>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 =======
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
@@ -58,7 +75,11 @@ void main() => runApp(
         builder: (context) => const MyApp(), // Wrap your app
       ),
     );
+<<<<<<< HEAD
+>>>>>>> origin/development
+=======
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
+>>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 
 class MyApp extends StatelessWidget {
 =======
@@ -66,19 +87,30 @@ class MyApp extends StatefulWidget {
 >>>>>>> af96ebcd16ba8cc931d715eb95efd4fe116aea0a
   const MyApp({super.key});
 
+<<<<<<< HEAD
+ 
+=======
   @override
   State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
   // This widget is the root of your application.
+>>>>>>> origin/development
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
 <<<<<<< HEAD
       
 <<<<<<< HEAD
+<<<<<<< HEAD
+
+      home: Settings(inputText: '',),
+      
+
+=======
       home: TodayAttendanceEvents(inputText: '',),///////////
+>>>>>>> fc32bb37d08f0dd85541cf5fe577e8389ca61b8a
 =======
       home: Basketballpage(inputText: '',),///////////
 >>>>>>> 4f7e0eb147cf61572d934a740109070429b03c6f
@@ -87,6 +119,7 @@ class _MyAppState extends State<MyApp> {
       home: SplashPage(), ///////////
 
 >>>>>>> af96ebcd16ba8cc931d715eb95efd4fe116aea0a
+>>>>>>> origin/development
       debugShowCheckedModeBanner: false,
 >>>>>>> origin/development
     );
