@@ -3,11 +3,9 @@ import 'package:flutter/material.dart';
 import 'Pages/RequestLettersPage.dart';
 
 
-void main() => runApp(
-  DevicePreview(
-    builder:(context) => const MyApp()
-     ),
-  );
+void main() {
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
