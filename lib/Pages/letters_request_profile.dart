@@ -2,6 +2,7 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
+
 class LetterProfile extends StatelessWidget {
   const LetterProfile({Key? key});
 
@@ -37,6 +38,8 @@ class LetterProfile extends StatelessWidget {
         ),
 
 
+
+
        //main container
       body: Container(
         
@@ -70,6 +73,7 @@ class LetterProfile extends StatelessWidget {
                     
                   ),
                 ),
+      
       
       
       
