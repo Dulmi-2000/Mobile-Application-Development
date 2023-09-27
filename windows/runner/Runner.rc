@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "madugc" "\0"
+            VALUE "FileDescription", "npaly_application" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "madugc" "\0"
+            VALUE "InternalName", "npaly_application" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "madugc.exe" "\0"
-            VALUE "ProductName", "madugc" "\0"
+            VALUE "OriginalFilename", "npaly_application.exe" "\0"
+            VALUE "ProductName", "npaly_application" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

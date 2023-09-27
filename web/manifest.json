@@ -1,6 +1,6 @@
 {
-    "name": "madugc",
-    "short_name": "madugc",
+    "name": "npaly_application",
+    "short_name": "npaly_application",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

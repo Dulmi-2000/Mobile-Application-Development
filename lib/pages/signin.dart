@@ -1,209 +1,323 @@
+//import 'package:dropdown_button2/dropdown_button2.dart';
+//import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
-import 'package:madugc/pages/forgotpassword.dart';
+import 'package:hexcolor/hexcolor.dart';
 
-class signin extends StatefulWidget {
-  const signin({Key? key}) : super(key: key);
+import 'package:npaly_application/Pages/forgotpassword.dart';
+import 'package:npaly_application/Pages/home_page.dart';
+import 'package:npaly_application/Pages/signup.dart';
+//import 'package:npaly_application/Pages/card_paymnet.dart';
 
-  @override
-  State<signin> createState() => _signinState();
-}
+class signin extends StatelessWidget {
+  const signin({Key? key, required String inputText});
 
-class _signinState extends State<signin> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-        child:Scaffold(
-          body: SingleChildScrollView(
+    Size size = MediaQuery.of(context).size;
+
+    return Scaffold(
+
+        //background color of the page
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+        body: SizedBox(
+          height: size.height,
+          width: size.width,
+          child: SingleChildScrollView(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SizedBox(height: 70,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    SizedBox(height: 0,),
-                    Text("Welcome Back",style: TextStyle(fontSize: 40),)
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text("Sign in to your Account ")
-                  ],
-                ),
-                SizedBox(height: 40,),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 300,
-                      width: 300,
-                      child: Image.asset("images/signin.png" ),
-                    )
-                  ],
-                ),
-                // Row(
-                //   children: [
-                //     Container(
-                //       decoration: BoxDecoration(
-                //           color: Colors.white,
-                //           // borderRadius: BorderRadius.circular(35),
-                //           boxShadow:[ BoxShadow(
-                //             blurRadius: 10,
-                //             offset: Offset(1, 1),
-                //             color: Colors.grey.withOpacity(1),
-                //           )
-                //           ]
-                //       ),
-                //
-                //       child:
-                //       const TextField(
-                //         style: TextStyle(fontSize: 10 , height: 2.0),
-                //         decoration: InputDecoration(
-                //             hintText: "User Name",
-                //             prefixIcon: Icon(Icons.account_box_outlined , color: Colors.red,)
-                //         ),
-                //       ),
-                //     ),
-                //   ],
-                // )
-                SizedBox(height: 10,),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    SizedBox(width: 30,),
-                  Container(
-                    width: 350,
-
-                    child:
-
-                    Text("User Name",style: TextStyle(fontSize: 20,color: Colors.grey),)  ,
-                  )
-                  ],
-                ),
-                SizedBox(height: 10,),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                   Container(
-                     width: 350,
-                     decoration: BoxDecoration(
-                       color: Colors.white,
-                       boxShadow:[ BoxShadow(
-                         blurRadius: 10,
-                         offset: Offset(1,1),
-                         color: Colors.grey.withOpacity(1)
-                       )]
-                     ),
-                     child: TextField(
-                       style: TextStyle(fontSize: 10 , height: 2.0),
-                       decoration: InputDecoration(
-                           // hintText: "User Name",
-                           prefixIcon: Icon(Icons.account_box_outlined , color: Colors.grey)
-                       ),
-                     ),
-                   )
-                  ],
-                ),
-                SizedBox(height: 10,),
-                Row(
-                  children: [
-                    SizedBox(width: 30,),
-                    Container(
-                      width: 350,
-                      child:
-                      Text("Password",style: TextStyle(fontSize: 20 ,color: Colors.grey),),
-                    )
-                  ],
-                ),
-                SizedBox(height: 10,),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 350,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow:[ BoxShadow(
-                              blurRadius: 10,
-                              offset: Offset(1,1),
-                              color: Colors.grey.withOpacity(1)
-                          )]
+                SizedBox(
+                  height: size.height / 1.8,
+                  child: Column(
+                    children: [
+                      //space in top
+                      SizedBox(
+                        height: size.height / 25,
                       ),
-                      child: TextField(
-                        style: TextStyle(fontSize: 10 , height: 2.0),
-                        decoration: InputDecoration(
-                            // hintText: "Password",
-                            prefixIcon: Icon(Icons.password , color: Colors.grey,)
+
+                      //text- pay here
+                      const Text(
+                        "Welcome Back",
+                        style: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.w900,
                         ),
                       ),
-                    )
-                  ],
+
+                      //space between 2 texts
+                      SizedBox(
+                        height: size.height / 100,
+                      ),
+
+                      //text - get paid for nsbm
+                      const Text(
+                        "Sign in to your account",
+                        style: TextStyle(
+                          fontSize: 16,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+
+                      //space between text and image
+                      /*    SizedBox(
+                  height: size.height/500,    
                 ),
-                SizedBox(height: 7,),
-                Row(
+                */
 
-                  children: [
-                    Container(
-                      width: 380,
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
+                      //image
+                      Image.asset(
+                        "assets/login1.png",
+                        height: size.height / 2.45,
+                        width: size.width / 1.1,
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: size.height / 100,
+                  width: size.width / 3,
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 30, bottom: 10),
+                  child: Align(
+                    alignment: AlignmentDirectional.topStart,
+                    child: Text(
+                      'Username',
+                      style: TextStyle(
+                        fontSize: 18,
+                        color: Colors.black,
+                        //color: Color.fromARGB(235, 158, 157, 154),
+                        letterSpacing: 0.3,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: size.height / 2.2,
+                  width: double.infinity,
+                  child: Column(
+                    children: [
+                      ConstrainedBox(
+                        constraints: BoxConstraints(
+                            minHeight: size.height / 20,
+                            maxWidth: size.width / 1.2),
+                        child: TextField(
+                          //controller: myController,
 
+                          keyboardType: TextInputType.number,
 
-                          GestureDetector(
-                              onTap: (){
+                          decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(
+                                vertical: 8, horizontal: 12),
+
+                            //display text
+                            hintText: "Enter your Username",
+
+                            hintStyle: TextStyle(),
+
+                            border: OutlineInputBorder(
+                                // borderRadius: BorderRadius.circular(5.0),
+                                borderSide: BorderSide(
+                              color: Colors.black26,
+                            )),
+
+                            //error message
+                          ),
+
+                          style: TextStyle(
+                            fontSize: 16,
+                            //color: HexColor('#39B54A'),
+                            //color: Color.fromARGB(235, 158, 157, 154),
+                            letterSpacing: 0.3,
+                          ),
+                        ),
+                      ),
+
+                      //space between list and amount box
+                      SizedBox(
+                        height: size.height / 40,
+                      ),
+
+                      const Padding(
+                        padding: EdgeInsets.only(left: 30, bottom: 10),
+                        child: Align(
+                          alignment: AlignmentDirectional.topStart,
+                          child: Text(
+                            'Password',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.black,
+                              //color: Color.fromARGB(235, 158, 157, 154),
+                              letterSpacing: 0.3,
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      //password
+                      ConstrainedBox(
+                        constraints: BoxConstraints(
+                            minHeight: size.height / 20,
+                            maxWidth: size.width / 1.2),
+                        child: TextField(
+                          //controller: myController,
+                          obscureText: true,
+                          //keyboardType: TextInputType.number,
+
+                          decoration: const InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(
+                                vertical: 8, horizontal: 12),
+
+                            //display text
+                            hintText: "Enter your Password",
+
+                            hintStyle: TextStyle(),
+
+                            border: OutlineInputBorder(
+                                // borderRadius: BorderRadius.circular(5.0),
+                                borderSide: BorderSide(
+                              color: Colors.black26,
+                            )),
+
+                            /*         //error message
+                                          
+                                     errorText: amountError.isNotEmpty ? amountError : null,
+                                     errorMaxLines: 1,
+                                     errorStyle: const TextStyle(
+                                     color: Color.fromARGB(255, 212, 59, 48),
+                                     fontSize: 12.5,    
+                                   ),
+                             */
+                          ),
+
+                          style: TextStyle(
+                            fontSize: 16,
+                            //color: HexColor('#39B54A'),
+                            //color: Color.fromARGB(235, 158, 157, 154),
+                            letterSpacing: 0.3,
+                          ),
+                        ),
+                      ),
+
+                      SizedBox(
+                        height: size.height / 50,
+                      ),
+
+                      //forgot password
+                      Padding(
+                        padding: const EdgeInsets.only(right: 30.0),
+                        child: Align(
+                          alignment: Alignment.topRight,
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const ForgotPasswordPage(
+                                    inputText: '',
+                                  ),
+                                ),
+                              );
+                            },
+                            child: Text(
+                              'Forgot Password?',
+                              style: TextStyle(
+                                decoration: TextDecoration.none,
+                                color: HexColor('#39B54A'),
+                                fontSize: 15,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      //space between  box continue button
+                      SizedBox(height: size.height / 25),
+
+                      //continue button
+
+                      SizedBox(
+                        height: size.height / 20,
+                        width: size.width / 1.2,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: HexColor("#39B54A"),
+                          ),
+                          onPressed: () {
+                            // doValidation(BuildContext);
+
+                            Navigator.pushReplacement(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HomePage(
+                                  inputText: '',
+                                ), // Replace with the screen you want to navigate to
+                              ),
+                            );
+                            //myController.clear();
+
+                            ///
+                          },
+                          child: const Text(
+                            'Sign In',
+                            style: TextStyle(
+                              fontSize: 17,
+                              letterSpacing: 0.3,
+                            ),
+                          ),
+                        ),
+                      ),
+
+                      SizedBox(
+                        height: size.height / 50,
+                      ),
+
+                      SizedBox(
+                        width: size.width / 2,
+                      ),
+
+                      Center(
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            const Align(
+                                alignment: Alignment.topCenter,
+                                child: Text(
+                                  "Do not have an account?",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                  ),
+                                )),
+                            GestureDetector(
+                              onTap: () {
                                 Navigator.push(
-                                    context, MaterialPageRoute(
-                                  builder: (context) => password(),
-                                ));
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) =>
+                                        const SignUpPage(inputText: ''),
+                                  ),
+                                );
                               },
-                              child: Text("Forgot Password ?",style: TextStyle(color: Colors.green),))
-                        ],
-                      ),
-                    )
-                  ],
-                ),
-                SizedBox(height: 30,),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      width: 350,
-                      height: 30,
-                      child: ElevatedButton(
-                        style: ButtonStyle(
-                          backgroundColor:MaterialStateProperty.all<Color>(Colors.green),
+                              child: Text(
+                                '  Sign UP',
+                                style: TextStyle(
+                                  decoration: TextDecoration.none,
+                                  color: HexColor('#39B54A'),
+                                  fontSize: 15,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
-                        onPressed: (){},
-                        child: Text("Sign In")
-                      ),
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
-                SizedBox(height: 40,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("Already have an Account ? "),
-                    GestureDetector(
-                        onTap: (){
-
-                        },
-                        child: Text("Sign in",style: TextStyle(color: Colors.green),))
-                  ],
-                )
               ],
             ),
           ),
-
         ));
   }
 }

@@ -15,6 +15,7 @@ class ReservationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         //row mokuth dala na default widihata hadala tyenne . kagen hari ahala app bar ektth ewa dann onida kiyala blnn.
         backgroundColor: HexColor("#39B54A"),
@@ -24,7 +25,9 @@ class ReservationPage extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const HomePage(),
+                builder: (context) => const HomePage(
+                  inputText: '',
+                ),
               ),
             );
           },

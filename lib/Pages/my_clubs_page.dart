@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:modern_form_line_awesome_icons/modern_form_line_awesome_icons.dart';
+import 'package:npaly_application/Pages/cricket_page_myclubb.dart';
 import 'package:npaly_application/Pages/profile_page.dart';
 import 'package:npaly_application/Pages/sports_clubs_page.dart';
 
@@ -47,9 +48,13 @@ class MyClubsPage extends StatelessWidget {
               //club page eke link eka dann ontap athulata
               onTap: () {
                 //profilepage kiyana thana navigate wenn oni page eke nama dann
-                Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-                  return const ProfilePage();
-                }));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AfterCricketpage(
+                            inputText: '',
+                          )),
+                );
               },
             ),
           ],

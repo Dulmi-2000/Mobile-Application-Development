@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:modern_form_line_awesome_icons/modern_form_line_awesome_icons.dart';
+import 'package:npaly_application/Pages/badminton_club.dart';
+import 'package:npaly_application/Pages/basketball_club.dart';
+import 'package:npaly_application/Pages/chess_club.dart';
+import 'package:npaly_application/Pages/cricket_club.dart';
 import 'package:npaly_application/Pages/home_page.dart';
+import 'package:npaly_application/Pages/martialarts_club.dart';
 import 'package:npaly_application/Pages/nav_bar.dart';
-import 'package:npaly_application/Pages/profile_page.dart';
+//import 'package:npaly_application/Pages/profile_page.dart';
+import 'package:npaly_application/Pages/rugby_club.dart';
+import 'package:npaly_application/Pages/volleyball_club.dart';
 
 class SportsClubsPage extends StatelessWidget {
   const SportsClubsPage({super.key});
@@ -14,20 +21,11 @@ class SportsClubsPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         //row mokuth dala na default widihata hadala tyenne . kagen hari ahala app bar ektth ewa dann onida kiyala blnn.
         backgroundColor: HexColor("#39B54A"),
         //backbutton
-        leading: IconButton(
-          onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const HomePage(),
-              ),
-            );
-          },
-          icon: const Icon(LineAwesomeIcons.arrow_left),
-        ),
+
         title: const Text(
           "Sports Clubs",
           style: TextStyle(color: Colors.white),
@@ -49,9 +47,13 @@ class SportsClubsPage extends StatelessWidget {
               //club page eke link eka dann ontap athulata
               onTap: () {
                 //profilepage kiyana thana navigate wenn oni page eke nama dann
-                Navigator.of(context).push(MaterialPageRoute(builder: (_) {
-                  return const ProfilePage();
-                }));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Cricketpage(
+                            inputText: '',
+                          )),
+                );
               },
             ),
             ClubPageItem(
@@ -62,12 +64,28 @@ class SportsClubsPage extends StatelessWidget {
             ClubPageItem(
               imagePath: "assets/chess_club.jpeg",
               clubName: "Chess Club",
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Chesspage(
+                            inputText: '',
+                          )),
+                );
+              },
             ),
             ClubPageItem(
               imagePath: "assets/badminton_club.jpeg",
               clubName: "Badminton Club",
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Badmintonpage(
+                            inputText: '',
+                          )),
+                );
+              },
             ),
             ClubPageItem(
               imagePath: "assets/gym.png",
@@ -77,7 +95,15 @@ class SportsClubsPage extends StatelessWidget {
             ClubPageItem(
               imagePath: "assets/martialart_club.jpg",
               clubName: "Martialarts Club",
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Martialartpage(
+                            inputText: '',
+                          )),
+                );
+              },
             ),
             ClubPageItem(
               imagePath: "assets/netball_club.jpg",
@@ -87,7 +113,15 @@ class SportsClubsPage extends StatelessWidget {
             ClubPageItem(
               imagePath: "assets/rugby_club.jpg",
               clubName: "Rugby Club",
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Rugbypage(
+                            inputText: '',
+                          )),
+                );
+              },
             ),
             ClubPageItem(
               imagePath: "assets/tabletennis_club.jpeg",
@@ -97,12 +131,28 @@ class SportsClubsPage extends StatelessWidget {
             ClubPageItem(
               imagePath: "assets/basketball_club.jpg",
               clubName: "Basketball Club",
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Basketballpage(
+                            inputText: '',
+                          )),
+                );
+              },
             ),
             ClubPageItem(
               imagePath: "assets/volleyball_club.jpg",
               clubName: "Volleyball Club",
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const VolleyballPage(
+                            inputText: '',
+                          )),
+                );
+              },
             ),
           ],
         ),

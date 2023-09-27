@@ -8,9 +8,16 @@ import 'package:flutter/services.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:modern_form_line_awesome_icons/modern_form_line_awesome_icons.dart';
+import 'package:npaly_application/Pages/edit_profile_page.dart';
+import 'package:npaly_application/Pages/events_profile.dart';
 import 'package:npaly_application/Pages/home_page.dart';
+import 'package:npaly_application/Pages/letters_profile.dart';
 import 'package:npaly_application/Pages/my_clubs_page.dart';
 import 'package:npaly_application/Pages/nav_bar.dart';
+import 'package:npaly_application/Pages/payment_history_profile.dart';
+import 'package:npaly_application/Pages/reservations_profile.dart';
+import 'package:npaly_application/Pages/settings_profile.dart';
+import 'package:npaly_application/Pages/signin.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -59,7 +66,9 @@ class _ProfilePageState extends State<ProfilePage> {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => const HomePage(),
+                builder: (context) => const HomePage(
+                  inputText: '',
+                ),
               ),
             );
           },
@@ -74,7 +83,17 @@ class _ProfilePageState extends State<ProfilePage> {
           //notification icon
           // IconButton(onPressed: () {}, icon: const Icon(LineAwesomeIcons.bell)),
           //setting icon
-          IconButton(onPressed: () {}, icon: const Icon(LineAwesomeIcons.cog)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const Settings(
+                            inputText: '',
+                          )),
+                );
+              },
+              icon: const Icon(LineAwesomeIcons.cog)),
         ],
       ),
       //using stack for overlapping profile picture
@@ -200,7 +219,7 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   Widget buildTopContentSection() {
-    //Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery.of(context).size;
     return Column(
       children: [
         const SizedBox(height: 8),
@@ -217,14 +236,21 @@ class _ProfilePageState extends State<ProfilePage> {
           style: TextStyle(fontSize: 12),
         ),
         const Text(
-          "Bsc(honors) in software Engineering",
+          "gayathriiresha@gmail.com",
           style: TextStyle(fontSize: 12),
         ),
         const SizedBox(height: 12),
         SizedBox(
-          height: 25,
+          height: size.height / 20,
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const EditProfilePage(),
+                ),
+              );
+            },
             style:
                 ElevatedButton.styleFrom(backgroundColor: HexColor("#39B54A")),
             child: const Text(
@@ -235,6 +261,9 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
             ),
           ),
+        ),
+        SizedBox(
+          height: size.height / 85,
         ),
         const Divider(
           color: Colors.black,
@@ -295,7 +324,14 @@ class _ProfilePageState extends State<ProfilePage> {
 
       //for my events
       InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const EventsProfile(),
+            ),
+          );
+        },
         //color: HexColor("#FBFBFB"),
         child: ListTile(
           leading: Container(
@@ -371,7 +407,15 @@ class _ProfilePageState extends State<ProfilePage> {
 
       //forpayments
       InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => const PaymentHistoryProfile(
+                      inputText: '',
+                    )),
+          );
+        },
         //color: HexColor("#FBFBFB"),
         child: ListTile(
           leading: Container(
@@ -409,7 +453,15 @@ class _ProfilePageState extends State<ProfilePage> {
 
       //for reservations
       InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => const ReservationProfile(
+                      inputText: '',
+                    )),
+          );
+        },
         //color: HexColor("#FBFBFB"),
         child: ListTile(
           leading: Container(
@@ -447,7 +499,15 @@ class _ProfilePageState extends State<ProfilePage> {
 
       //for requested letters
       InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+                builder: (context) => const LetterProfile(
+                      inputText: '',
+                    )),
+          );
+        },
         //color: HexColor("#FBFBFB"),
         child: ListTile(
           leading: Container(
@@ -487,7 +547,16 @@ class _ProfilePageState extends State<ProfilePage> {
 
       //for logout
       InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const signin(
+                inputText: '',
+              ),
+            ),
+          );
+        },
         //color: HexColor("#FBFBFB"),
         child: ListTile(
           leading: Container(

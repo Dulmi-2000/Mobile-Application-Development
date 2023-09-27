@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:npaly_application/Pages/nav_bar.dart';
 
 class Notifications extends StatelessWidget {
   const Notifications({Key? key});
@@ -7,6 +8,7 @@ class Notifications extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text('Notifications'),
         backgroundColor: Colors.green,
       ),
@@ -36,6 +38,7 @@ class Notifications extends StatelessWidget {
           // Add more sections here
         ],
       ),
+      bottomNavigationBar: NavBarPage(),
     );
   }
 

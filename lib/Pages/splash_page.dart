@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:npaly_application/Pages/home_page.dart';
-
-import 'package:npaly_application/Pages/nav_bar.dart';
+import 'package:npaly_application/Pages/main_login.dart';
 
 class SplashPage extends StatefulWidget {
-  const SplashPage({super.key});
+  const SplashPage({super.key, required String inputText});
 
   @override
   State<SplashPage> createState() => _SplashPageState();
@@ -18,7 +16,10 @@ class _SplashPageState extends State<SplashPage> {
     Future.delayed(const Duration(seconds: 3), () {
       // Navigate to the HomePage after the splash screen is done.
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const HomePage()),
+        MaterialPageRoute(
+            builder: (context) => const LoginFirstPage(
+                  inputText: '',
+                )),
       );
     });
   }
@@ -34,8 +35,6 @@ class _SplashPageState extends State<SplashPage> {
             // mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
 
-            //////////////////change this code////////////////////////////////
-
             children: [
               Expanded(
                 flex: 4,
@@ -43,60 +42,17 @@ class _SplashPageState extends State<SplashPage> {
                   width: double.infinity,
                   //padding: const EdgeInsets.only(right: 10),
 
-<<<<<<< HEAD
-
-         
-         children: [
-          Expanded(
-            flex: 4,
-            child: SizedBox(
-          width: double.infinity,
-          //padding: const EdgeInsets.only(right: 10),
-
-
-
-
-
-
-            child: Center(
-              child: Image.asset("assets/logo1.png",
-              height: size.height/5,
-              width: size.width/2.3,
-              ),
-              ),
-            ),        
-          ),
-
-
-
-
-          ], 
-        ),
-      )
-    );
-  } 
-}
-=======
                   child: Center(
                     child: Image.asset(
                       "assets/logo1.png",
                       height: size.height / 5,
-                      width: size.width / 4,
+                      width: size.width / 2.3,
                     ),
                   ),
                 ),
               ),
-              Expanded(
-                flex: 1,
-                child: Center(
-                    child: Container(
-                  padding: const EdgeInsets.all(30),
-                  //  child: Image.asset("assets/logo2.png")
-                )),
-              )
             ],
           ),
         ));
   }
 }
->>>>>>> origin/development

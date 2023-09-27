@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:npaly_application/Pages/event_calender.dart';
 import 'package:npaly_application/Pages/home_page.dart';
-import 'package:npaly_application/Pages/my_clubs_page.dart';
+//import 'package:npaly_application/Pages/my_clubs_page.dart';
+import 'package:npaly_application/Pages/notification.dart';
 import 'package:npaly_application/Pages/profile_page.dart';
-import 'package:npaly_application/Pages/reservation_page.dart';
+//import 'package:npaly_application/Pages/reservation_page.dart';
 import 'package:npaly_application/Pages/sports_clubs_page.dart';
 
 class NavBarPage extends StatefulWidget {
@@ -26,8 +28,12 @@ class _NavBarPageState extends State<NavBarPage> {
         setState(() {
           _currentIndex = index;
           if (_currentIndex == 0) {
-            Navigator.push(context,
-                MaterialPageRoute(builder: ((context) => const HomePage())));
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: ((context) => const HomePage(
+                          inputText: '',
+                        ))));
           }
           if (_currentIndex == 1) {
             Navigator.push(
@@ -36,14 +42,14 @@ class _NavBarPageState extends State<NavBarPage> {
                     builder: ((context) => const SportsClubsPage())));
           }
           if (_currentIndex == 2) {
+            Navigator.push(context,
+                MaterialPageRoute(builder: ((context) => EventCalender())));
+          }
+          if (_currentIndex == 3) {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: ((context) => const ReservationPage())));
-          }
-          if (_currentIndex == 3) {
-            Navigator.push(context,
-                MaterialPageRoute(builder: ((context) => const MyClubsPage())));
+                    builder: ((context) => const Notifications())));
           }
           if (_currentIndex == 4) {
             Navigator.push(context,
